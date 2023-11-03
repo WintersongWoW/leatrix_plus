@@ -8,8 +8,9 @@
 ## Notes-zhCN: 哆啦A梦的百宝袋
 ## Notes-zhTW: 哆啦A夢的百寶袋
 
-## Version: 1.14.38
-## Author: Leatrix
+## Version: 1.0.0
+## Original Author: Leatrix (https://www.leatrix.com/)
+## Edits: Wintersong
 ## SavedVariables: LeaPlusDB
 
 ## X-Curse-Project-ID: 322362
