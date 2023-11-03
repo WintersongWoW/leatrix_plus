@@ -1747,6 +1747,10 @@
 									-- sell max amount of items to prevent disconnect
 									if SoldCount == maxSellJunkCount then
 										StopSelling()
+										if totalPrice > 0 and LeaPlusLC["AutoSellShowSummary"] == "On" then 
+											LeaPlusLC:Print(L["Sold junk for"] .. " " .. GetCoinText(totalPrice) .. ".")
+											LeaPlusLC:Print("Vendor limit reached, reopen vendor to resume selling junk.")
+										end
 										return
 									end
 								else
