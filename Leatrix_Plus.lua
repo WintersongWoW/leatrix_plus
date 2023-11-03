@@ -1669,7 +1669,7 @@
 			StartMsg.f:SetText(L["SELLING JUNK"])
 
 			-- Declarations
-			local IterationCount, totalPrice = 8, 0
+			local IterationCount, maxSellJunkCount, totalPrice = 500, 7, 0
 			local SellJunkTicker, mBagID, mBagSlot
 
 			-- Create configuration panel
@@ -1743,6 +1743,11 @@
 										if SoldCount == 1 then
 											mBagID, mBagSlot = BagID, BagSlot
 										end
+									end
+									-- sell max amount of items to prevent disconnect
+									if SoldCount == maxSellJunkCount then
+										StopSelling()
+										return
 									end
 								else
 									-- If merchant frame is not open, stop selling

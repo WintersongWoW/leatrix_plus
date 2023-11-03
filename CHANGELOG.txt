@@ -1,5 +1,5 @@
 1.0.0 - 3th November 2023
- - set sell limit to 8 to prevent disconnects while sending actions to Mangos.
+ - set sell limit to 7 to prevent disconnects while sending actions to Mangos.
 
 ### prefork changelog
 
