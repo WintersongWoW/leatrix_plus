@@ -1669,7 +1669,7 @@
 			StartMsg.f:SetText(L["SELLING JUNK"])
 
 			-- Declarations
-			local IterationCount, totalPrice = 500, 0
+			local IterationCount, totalPrice = 8, 0
 			local SellJunkTicker, mBagID, mBagSlot
 
 			-- Create configuration panel
